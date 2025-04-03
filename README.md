@@ -20,6 +20,47 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Prototype Mode
+
+This project is currently in **design mode** - focusing on UI/UX prototyping with mock data. Key characteristics:
+
+- Frontend-only implementation with dummy JSON data
+- All navigation and UI components are functional
+- No backend integration (data is simulated)
+- Focus on responsive design and user experience
+
+## Testing
+
+The project includes automated tests to ensure UI consistency during the prototype phase:
+
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests with UI mode (recommended for development)
+npm run test:ui
+
+# Run tests in debug mode
+npm run test:debug
+
+# View test reports
+npm run test:report
+
+# Update visual snapshots after UI changes
+npm run test:update
+```
+
+### Test Categories
+
+- **Navigation Tests**: Verify core user flows and navigation
+- **Accessibility Tests**: Check for basic accessibility compliance
+- **Visual Regression Tests**: Ensure UI consistency across changes
+- **Design System Tests**: Verify styling consistency across components
+
+Visual tests use a higher threshold (0.2) to accommodate minor changes during prototyping without breaking tests.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
