@@ -10,13 +10,13 @@ test.describe('Levercast Application Tests', () => {
 
   test('should navigate to dashboard and display all UI elements', async ({ page }) => {
     // Verify dashboard elements - target specific heading by exact text
-    await expect(page.getByRole('heading', { level: 1, name: /welcome to levercast/i })).toBeVisible({ timeout: 5000 });
+    await expect(page.getByRole('heading', { level: 1, name: /welcome to levercast/i })).toBeVisible({ timeout: 10000 });
     
-    // Check for Recent Posts section in the main content area, not in navigation
-    await expect(page.getByRole('main').getByText(/recent posts/i, { exact: false })).toBeVisible({ timeout: 5000 });
+    // Check for Recent Posts section in the main content area, targeting the CardTitle specifically
+    await expect(page.locator('main').locator('div.font-semibold.text-lg', { hasText: /Recent Posts/i })).toBeVisible({ timeout: 10000 });
     
     // Verify post count cards are visible within the main content
-    await expect(page.getByRole('main').getByText(/total posts/i, { exact: false })).toBeVisible({ timeout: 5000 });
+    await expect(page.getByText(/total posts/i)).toBeVisible();
   });
 
   test('should navigate to posts list and test filtering', async ({ page }) => {

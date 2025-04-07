@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Copy, Edit, Trash, Twitter, Linkedin } from 'lucide-react';
 import { mockTemplates } from '../../lib/data/mock-data';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../ui/card';
 import Link from 'next/link';
 

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { PlusCircle, Search, Filter, ChevronDown, Calendar, SortAsc, SortDesc, X } from 'lucide-react';
 import { mockPosts, Post, PostStatus } from '../../lib/data/mock-data';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Input } from '../ui/input';
 import { 

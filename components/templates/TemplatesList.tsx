@@ -1,10 +1,11 @@
 "use client";
 
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Twitter, PlusCircle, Search, Filter, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
-import { mockTemplates } from '../../lib/data/mock-data';
-import { Button } from '../ui/Button';
+import { mockTemplates, Template } from '../../lib/data/mock-data';
+import { Button } from '../ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card';
+import { Input } from '../ui/input';
 
 export default function TemplatesList() {
   return (

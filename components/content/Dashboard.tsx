@@ -3,7 +3,7 @@
 import { PlusCircle, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { mockPosts } from '../../lib/data/mock-data';
-import { Button } from "../ui/Button";
+import { Button } from "../ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
 
 export default function Dashboard() {

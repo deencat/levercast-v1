@@ -3,8 +3,9 @@
 import { useState } from 'react';
 import { Sun, Moon, Save, User, Lock, Bell, Globe, Linkedin, Twitter } from 'lucide-react';
 import { useTheme } from '../../lib/theme-context';
-import { Button } from '../ui/Button';
-import { Switch } from '../ui/Switch';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Button } from '../ui/button';
+import { Switch } from '../ui/switch';
 import { Input } from '../ui/input';
 
 export default function SettingsPanel() {
